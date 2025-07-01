@@ -1,0 +1,13 @@
+server:
+  port: 2333
+  address: 0.0.0.0
+
+lavalink:
+  server:
+    password: "NoHackingAllowed2005&@66554321hsdfkjlasdjbfuiasjdbf"
+    sources:
+      youtube: true
+      soundcloud: true
+      http: true
+      twitch: true
+      local: false
