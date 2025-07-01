@@ -2,9 +2,11 @@ FROM openjdk:17-jdk-slim
 
 WORKDIR /app
 
-COPY . /app
+# Install curl to download files
+RUN apt-get update && apt-get install -y curl
 
-RUN ./gradlew build
+# Download latest Lavalink.jar from official releases
+RUN curl -L https://github.com/freyacodes/Lavalink/releases/latest/download/Lavalink.jar -o Lavalink.jar
 
 EXPOSE 2333
 
